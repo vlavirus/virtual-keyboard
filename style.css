@@ -165,7 +165,6 @@ body {
 .checkOut {
   display: flex;
   width : 600px;
-  /* background-color: lawngreen; */
 }
 
 .block1 {
@@ -175,7 +174,6 @@ body {
 .block2 {
   flex-basis:100%;
   width: 100px;
-  /* flex-basis:100%; */
 }
 
 .hidden {
@@ -216,4 +214,12 @@ body {
 
 .ShiftRight {
   width: 123px;
+}
+
+.notation {
+  position: relative;
+  width: 400px;
+  font-family: 'Lato';
+  font-size: 16px;
+  margin: 20px auto 0 auto;
 }

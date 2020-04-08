@@ -297,19 +297,23 @@ function listenerMechanicKeyboard() {
             document.querySelector('.text--window').value += '    ';
             findItem.classList.add('pushed');
         } else if ( find === 'AltLeft' || find === 'AltRight' ) {
-            e.preventDefault();
+            console.log(findItem);
             findItem.classList.add('pushed');
-            return;
+            e.preventDefault();
+            return 0;
         } else if ( e.altKey && e.ctrlKey ) {
             changeLanguage();
             findItem.classList.add('pushed');
+            e.preventDefault();
         } else if ( find === 'ShiftLeft' || find === 'ShiftRight' ) {
             onShift();
             findItem.classList.add('pushed');
+            e.preventDefault();
             return;
         } else if (checktKeys(find, e)) {
         } else {
             document.querySelector('.text--window').value += document.querySelector('.'+e.code).innerHTML;
+            e.preventDefault();
             findItem.classList.add('pushed');
         }
     });
@@ -319,4 +323,4 @@ function listenerMechanicKeyboard() {
         let findItem = document.querySelector('.'+find);
         findItem.classList.remove('pushed');
     });
-}
+}git

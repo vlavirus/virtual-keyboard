@@ -323,4 +323,4 @@ function listenerMechanicKeyboard() {
         let findItem = document.querySelector('.'+find);
         findItem.classList.remove('pushed');
     });
-}git
+}
